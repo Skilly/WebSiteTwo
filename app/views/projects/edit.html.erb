@@ -9,3 +9,4 @@
   <%= f.submit 'Edit Project'%>
 <% end %>
 <%= link_to "Delete #{@project.title}", project_path(@project.id), method: :delete %>
+<%= link_to "Home", showcase_path(), method: :get %>

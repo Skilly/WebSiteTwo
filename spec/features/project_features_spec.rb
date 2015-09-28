@@ -76,6 +76,7 @@ feature 'showcase' do
       expect(page).to have_field("Title", with: @project.title )
       expect(page).to have_field("Description", with: @project.description )
       expect(page).to have_field("Link", with: @project.link )
+      expect(page).to have_link("Home", href: '/')
     end
 
     scenario 'can edit showcase' do
